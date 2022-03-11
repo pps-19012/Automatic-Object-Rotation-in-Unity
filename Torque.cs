@@ -22,7 +22,6 @@ public class Torque : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         StartCoroutine(KeyActive());
-        //Movement();
     }
 
     // Update is called once per frame
@@ -180,8 +179,8 @@ public class Torque : MonoBehaviour
     IEnumerator KeyActive()
     {
         yield return new WaitForSeconds(3f);
-        //Movement();                      <<<------ uncomment this to make the cube rotate automatically
-        InputMovement();
+        Movement();
+        //InputMovement();                      <<<------ uncomment this to make the cube rotate manually
         //keyPressed = true;
         Debug.Log("Start");
     }
@@ -193,8 +192,8 @@ public class Torque : MonoBehaviour
         Debug.Log("D");
         yield return new WaitForSeconds(waitTime);
         //pos0.transform.position = new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z);
-        //Movement();                      <<<------ uncomment this to make the cube rotate automatically
-        InputMovement();
+        Movement();
+        //InputMovement();                      <<<------ uncomment this to make the cube rotate manually
         //InputMovement();
         //keyPressed = true;
 
@@ -207,8 +206,8 @@ public class Torque : MonoBehaviour
         Debug.Log("W");
         yield return new WaitForSeconds(waitTime);
         //pos1.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.5f);
-        //Movement();                      <<<------ uncomment this to make the cube rotate automatically
-        InputMovement();
+        Movement();
+        //InputMovement();                      <<<------ uncomment this to make the cube rotate manually
         //InputMovement();
         //keyPressed = true;
 
@@ -221,8 +220,8 @@ public class Torque : MonoBehaviour
         Debug.Log("A");
         yield return new WaitForSeconds(waitTime);
         //pos2.transform.position = new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
-        //Movement();                      <<<------ uncomment this to make the cube rotate automatically
-        InputMovement();
+        Movement();
+        //InputMovement();                      <<<------ uncomment this to make the cube rotate manually
         //keyPressed = true;
 
     }
@@ -234,8 +233,8 @@ public class Torque : MonoBehaviour
         Debug.Log("S");
         yield return new WaitForSeconds(waitTime);
         //pos3.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.5f);
-        //Movement();                      <<<------ uncomment this to make the cube rotate automatically
-        InputMovement();
+        Movement();
+        //InputMovement();                      <<<------ uncomment this to make the cube rotate manually
         //keyPressed = true;
 
     }
