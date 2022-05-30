@@ -4,3 +4,5 @@
 - Add a cube (or any 3D object) in Unity. Create four different gameobjects (pos0, pos1, pos2, pos3) and set their position such that it coincides with the position of mid-point of edges of the top-view of cube (or the 3D object).
 
 - Adjust the yHeight parameter to get desired output.
+
+Demo: https://drive.google.com/file/d/1_jRXVp9czsCiLPR3eUDWKVdw2oVjPQ7c/view?usp=sharing
